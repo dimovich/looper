@@ -12,7 +12,15 @@ TODO: expand on this
 If you are using clj-http already, you can just add a dependency on looper:
 
 ```clj
-[com.farmlogs/looper "0.3.0"]
+;; modify your deps.edn
+{:deps
+ {
+  ;; ... your other deps here...
+  
+  com.farmlogs/looper {:git/url "https://github.com/dimovich/looper.git"
+                       :sha "d0f94c76dcb70724b065d8b424055ac6cba6b8b5"}
+  }
+ }
 ```
 
 Then turn this:
