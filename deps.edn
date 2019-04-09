@@ -1,0 +1,4 @@
+{:paths ["src"]
+ :deps
+ {clj-http {:mvn/version "3.9.1"}
+  diehard {:mvn/version "0.8.0"}}}

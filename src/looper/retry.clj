@@ -40,8 +40,8 @@
   ;; [10 40 160 640 2000 2000 ...]
   {:backoff-ms [10   ;; initial
                 2000 ;; max
-                4]   ;; factor
-   :max-retries 10  ;; will result in 11 total tries
+                4.0] ;; factor
+   :max-retries 10   ;; will result in 11 total tries
    :on-failed-attempt default-failure-log
    :retry-if retryable-error?})
 
